@@ -1,0 +1,111 @@
+.contaner{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url('../resorce/modern-tokyo-street-background.jpg');
+    background-size: cover;
+    background-position: center;}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Затемнение фона */
+  }
+.name{
+    display: flex;
+    z-index: 3;
+    width: 100%;
+}
+@keyframes fade-in-h1 {
+    from {
+      opacity: 0;
+      top: 70px;
+    }
+    to {
+      opacity: 1;
+      top: 20px;
+    }
+  }
+  
+  @keyframes fade-in-h3 {
+    from {
+      opacity: 0;
+      top: 110px;
+    }
+    to {
+      opacity: 1;
+      top: 70px;
+    }
+  }
+  
+  .animated-text-h1 {
+    opacity: 1;
+    z-index: 4;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    font-family: American Typewriter, serif;
+    animation: fade-in-h1 1s ease-in-out forwards;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
+  .animated-text-h3 {
+    opacity: 1;
+    z-index: 4;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    white-space: nowrap;
+    font-family: 'Playfair Display', serif;
+    animation: fade-in-h3 1s ease-in-out forwards;
+  }
+  .carda{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    height: 150px;
+    width: 1300px !important;
+    z-index: 5 !important;   
+    flex-direction: column; /* Гарантирует вертикальное расположение элементов */
+    align-items: center; /* Центрирует элементы по горизонтали */
+    opacity: 0.8;
+  }
+  .forma{
+    z-index: 10;
+  }
+  .carda .d-flex {
+    width: 100%; /* Гарантирует, что элементы займут всю доступную ширину */
+  }
+  
+  .carda .d-flex .mt-3,
+  .carda .d-flex .me-2 {
+    margin: 0; /* Убирает стандартные отступы */
+  }
+  
+  .carda .d-flex .mt-3:last-child {
+    margin-bottom: 10px; /* Добавляет отступ для последнего входного поля для размещения */
+  }
+  
+  .carda .d-flex .Form.Control,
+  .carda .d-flex .ButtonGroup,
+  .carda .d-flex .Button {
+    flex: 1; /* Делает элементы растягиваемыми для заполнения доступного пространства */
+  }
+  .cartinka{
+    height: 160px;
+    width: 276px;
+    margin:auto;
+    z-index: 10;
+  }
+  .cartochki{
+    width: 880px;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    opacity: 0.8; 
+  }

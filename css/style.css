@@ -1,0 +1,52 @@
+:root{
+--color1:#022e66;
+--color2:#6b99c3;
+--color3:#d1ab7d;
+--color4:#96785b;
+--color5:#c2c3c5;
+}
+.header{
+    height: 60px;
+    background-color: var(--color1);
+   
+    z-index: 3;
+}
+.header_img{
+    display: flex;
+align-items: center;
+margin: -5px auto ;
+}
+.icon-home{
+    font-size: 40px;
+    color: var(--color5);
+    margin-bottom: 20px;
+}
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 20px;
+}
+
+.linko{
+    color: var(--color5);
+    margin-right: 30px;
+}
+.btnpaz{
+    display: flex;
+    margin:10px;
+
+}
+.iz{
+    height: 600px;
+    width: 900px;
+    filter: brightness(40%)
+}
+.fot{
+    height: 80px;
+}
+.ld{
+    display: flex;
+    margin:-10px;
+    justify-content: center;
+}
